@@ -4,7 +4,6 @@
     refs:
     - "refs/heads/main"
   no_skip_to_most_recent: true
-  do_not_prune_images: true
   fail_on_prepare_env_warning: true
   resources: "XLARGE"
   actions:
