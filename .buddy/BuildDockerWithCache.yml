@@ -1,0 +1,14 @@
+- pipeline: "Build Docker with cache"
+  events:
+  - type: "PUSH"
+    refs:
+    - "refs/heads/main"
+  no_skip_to_most_recent: true
+  fail_on_prepare_env_warning: true
+  resources: "XLARGE"
+  actions:
+  - action: "Build Docker image"
+    type: "DOCKERFILE"
+    dockerfile_path: "baserepo/Dockerfile"
+    context_path: "baserepo/"
+    pull: false
