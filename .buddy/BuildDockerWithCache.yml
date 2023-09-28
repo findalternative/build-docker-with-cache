@@ -12,3 +12,7 @@
     dockerfile_path: "baserepo/Dockerfile"
     context_path: "baserepo/"
     pull: false
+  - action: "Clear cache"
+    type: "CLEAR_CACHE"
+    cache_types:
+    - "DOCKER"
