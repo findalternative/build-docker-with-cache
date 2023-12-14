@@ -12,8 +12,3 @@
     dockerfile_path: "baserepo/Dockerfile"
     context_path: "baserepo/"
     pull: false
-  - action: "Send notification to Telegram Channel"
-    type: "TELEGRAM"
-    trigger_time: "ON_FAILURE"
-    content: "$BUDDY_PIPELINE_NAME failed $BUDDY_EXECUTION_URL"
-    integration_hash: "WANYq1gK4oeE15wve0ByxjX2mR"
