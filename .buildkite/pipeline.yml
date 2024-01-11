@@ -4,4 +4,4 @@ steps:
   - label: "Build Docker with cache"
     plugins:
     - docker-compose#v4.16.0:
-      build: image
+        build: image
