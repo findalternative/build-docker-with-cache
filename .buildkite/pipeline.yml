@@ -1,4 +1,0 @@
-
-steps:
-  - label: "Build Docker with cache"
-    command: "cd baserepo && docker build -t image ."
