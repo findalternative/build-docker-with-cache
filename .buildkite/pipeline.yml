@@ -1,5 +1,7 @@
 steps:
-  - command: "cd baserepo"
-  - plugins:
+  - label: "Enter baserepo"
+    command: "cd baserepo"
+  - label: "Build Docker with cache"
+    plugins:
     - docker-compose#v4.16.0:
       build: image
