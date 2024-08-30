@@ -7,4 +7,4 @@ build-job:
   stage: build
   script:
     - cd baserepo
-    - echo "docker build -t image --cache-from image ."
+    - docker build -t image --cache-from image .
